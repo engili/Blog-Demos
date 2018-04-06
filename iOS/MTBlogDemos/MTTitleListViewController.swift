@@ -71,6 +71,10 @@ extension MTTitleListViewController: UITableViewDelegate {
             listVC.modelList = modelList
             listVC.modelTitle = item.itemName
             self.navigationController?.pushViewController(listVC, animated: true)
+        } else if let targetControllerClass = item.targetController as? UIViewController.Type  {
+            let vc = targetControllerClass.init()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
         }
     }
 }

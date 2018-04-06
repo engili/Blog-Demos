@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C13F3FB820764D1C006DDB77 /* MTGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13F3FB720764D1C006DDB77 /* MTGradientView.swift */; };
+		C13F3FBA207653D3006DDB77 /* MTCAGradientLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13F3FB9207653D3006DDB77 /* MTCAGradientLayerViewController.swift */; };
 		C1A3CE702075F96000F9A9EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A3CE6F2075F96000F9A9EB /* AppDelegate.swift */; };
 		C1A3CE752075F96000F9A9EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A3CE732075F96000F9A9EB /* Main.storyboard */; };
 		C1A3CE772075F96200F9A9EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1A3CE762075F96200F9A9EB /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C13F3FB720764D1C006DDB77 /* MTGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGradientView.swift; sourceTree = "<group>"; };
+		C13F3FB9207653D3006DDB77 /* MTCAGradientLayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTCAGradientLayerViewController.swift; sourceTree = "<group>"; };
 		C1A3CE6C2075F96000F9A9EB /* MTBlogDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTBlogDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1A3CE6F2075F96000F9A9EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1A3CE742075F96000F9A9EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -37,6 +41,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C13F3FB520764CBD006DDB77 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C13F3FB9207653D3006DDB77 /* MTCAGradientLayerViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C13F3FB620764CCD006DDB77 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C13F3FB720764D1C006DDB77 /* MTGradientView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C1A3CE632075F96000F9A9EB = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +79,7 @@
 				C1A3CE842075F99900F9A9EB /* Sources */,
 				C1A3CE6F2075F96000F9A9EB /* AppDelegate.swift */,
 				C1A3CE8A20763CA900F9A9EB /* MTTitleListViewController.swift */,
+				C1A3CE862075FB7C00F9A9EB /* BlogDemosModel.swift */,
 				C1A3CE732075F96000F9A9EB /* Main.storyboard */,
 				C1A3CE762075F96200F9A9EB /* Assets.xcassets */,
 				C1A3CE782075F96200F9A9EB /* LaunchScreen.storyboard */,
@@ -95,7 +116,6 @@
 			children = (
 				C1A3CE812075F96B00F9A9EB /* UIKit */,
 				C1A3CE822075F97200F9A9EB /* CoreAnimation */,
-				C1A3CE862075FB7C00F9A9EB /* BlogDemosModel.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -103,6 +123,8 @@
 		C1A3CE852075F9BA00F9A9EB /* CAGradientLayer */ = {
 			isa = PBXGroup;
 			children = (
+				C13F3FB620764CCD006DDB77 /* Views */,
+				C13F3FB520764CBD006DDB77 /* Controllers */,
 			);
 			path = CAGradientLayer;
 			sourceTree = "<group>";
@@ -179,6 +201,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1A3CE8B20763CA900F9A9EB /* MTTitleListViewController.swift in Sources */,
+				C13F3FBA207653D3006DDB77 /* MTCAGradientLayerViewController.swift in Sources */,
+				C13F3FB820764D1C006DDB77 /* MTGradientView.swift in Sources */,
 				C1A3CE872075FB7C00F9A9EB /* BlogDemosModel.swift in Sources */,
 				C1A3CE702075F96000F9A9EB /* AppDelegate.swift in Sources */,
 			);

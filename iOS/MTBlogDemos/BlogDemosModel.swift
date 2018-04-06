@@ -6,17 +6,19 @@
 //  Copyright © 2018 LiMengtian. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct MTItemModel {
     
-    init(itemName: String, subModels: [MTItemModel]? = nil) {
+    init(itemName: String, subModels: [MTItemModel]? = nil, targetController: Swift.AnyClass? = nil) {
         self.itemName = itemName
         self.subModels = subModels
+        self.targetController = targetController
     }
     
     let itemName: String
     let subModels: [MTItemModel]?
+    let targetController: Swift.AnyClass?
 }
 
 struct MTBlogDemosModel {
@@ -39,8 +41,7 @@ struct MTBlogDemosModel {
     
     //2.1 CALayer
     fileprivate static let calyerSubModels: [MTItemModel] = [
-        MTItemModel.init(itemName: "CAGradientLayer"),
-        MTItemModel.init(itemName: "CATextLayer")
+        MTItemModel.init(itemName: "CAGradientLayer", subModels: nil, targetController: MTCAGradientLayerViewController.self)
     ]
 
     
