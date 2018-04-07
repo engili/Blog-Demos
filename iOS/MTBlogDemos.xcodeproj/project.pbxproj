@@ -11,6 +11,9 @@
 		C13F3FBA207653D3006DDB77 /* MTCAGradientLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13F3FB9207653D3006DDB77 /* MTCAGradientLayerViewController.swift */; };
 		C13F3FBE2077335D006DDB77 /* MTKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13F3FBC2077335D006DDB77 /* MTKeyboardViewController.swift */; };
 		C13F3FBF2077335D006DDB77 /* MTKeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C13F3FBD2077335D006DDB77 /* MTKeyboardViewController.xib */; };
+		C13F3FC320779053006DDB77 /* MTLayerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13F3FC220779053006DDB77 /* MTLayerDelegate.swift */; };
+		C13F3FC520779EFC006DDB77 /* MTLayerDelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13F3FC420779EFC006DDB77 /* MTLayerDelegateViewController.swift */; };
+		C13F3FC92077A012006DDB77 /* MTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13F3FC82077A012006DDB77 /* MTViewController.swift */; };
 		C1A3CE702075F96000F9A9EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A3CE6F2075F96000F9A9EB /* AppDelegate.swift */; };
 		C1A3CE752075F96000F9A9EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A3CE732075F96000F9A9EB /* Main.storyboard */; };
 		C1A3CE772075F96200F9A9EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1A3CE762075F96200F9A9EB /* Assets.xcassets */; };
@@ -24,6 +27,9 @@
 		C13F3FB9207653D3006DDB77 /* MTCAGradientLayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTCAGradientLayerViewController.swift; sourceTree = "<group>"; };
 		C13F3FBC2077335D006DDB77 /* MTKeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTKeyboardViewController.swift; sourceTree = "<group>"; };
 		C13F3FBD2077335D006DDB77 /* MTKeyboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTKeyboardViewController.xib; sourceTree = "<group>"; };
+		C13F3FC220779053006DDB77 /* MTLayerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTLayerDelegate.swift; sourceTree = "<group>"; };
+		C13F3FC420779EFC006DDB77 /* MTLayerDelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTLayerDelegateViewController.swift; sourceTree = "<group>"; };
+		C13F3FC82077A012006DDB77 /* MTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTViewController.swift; sourceTree = "<group>"; };
 		C1A3CE6C2075F96000F9A9EB /* MTBlogDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTBlogDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1A3CE6F2075F96000F9A9EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1A3CE742075F96000F9A9EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,6 +76,39 @@
 			path = Keyboard;
 			sourceTree = "<group>";
 		};
+		C13F3FC020779009006DDB77 /* CALayerDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C13F3FC620779F01006DDB77 /* Controllers */,
+				C13F3FC120779029006DDB77 /* Models */,
+			);
+			path = CALayerDelegate;
+			sourceTree = "<group>";
+		};
+		C13F3FC120779029006DDB77 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C13F3FC220779053006DDB77 /* MTLayerDelegate.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C13F3FC620779F01006DDB77 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C13F3FC420779EFC006DDB77 /* MTLayerDelegateViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C13F3FC720779FFD006DDB77 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				C13F3FC82077A012006DDB77 /* MTViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
 		C1A3CE632075F96000F9A9EB = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +128,7 @@
 		C1A3CE6E2075F96000F9A9EB /* MTBlogDemos */ = {
 			isa = PBXGroup;
 			children = (
+				C13F3FC720779FFD006DDB77 /* General */,
 				C1A3CE842075F99900F9A9EB /* Sources */,
 				C1A3CE6F2075F96000F9A9EB /* AppDelegate.swift */,
 				C1A3CE8A20763CA900F9A9EB /* MTTitleListViewController.swift */,
@@ -120,6 +160,7 @@
 		C1A3CE832075F97A00F9A9EB /* CALayer */ = {
 			isa = PBXGroup;
 			children = (
+				C13F3FC020779009006DDB77 /* CALayerDelegate */,
 				C1A3CE852075F9BA00F9A9EB /* CAGradientLayer */,
 			);
 			path = CALayer;
@@ -216,11 +257,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C13F3FBE2077335D006DDB77 /* MTKeyboardViewController.swift in Sources */,
+				C13F3FC320779053006DDB77 /* MTLayerDelegate.swift in Sources */,
 				C1A3CE8B20763CA900F9A9EB /* MTTitleListViewController.swift in Sources */,
 				C13F3FBA207653D3006DDB77 /* MTCAGradientLayerViewController.swift in Sources */,
 				C13F3FB820764D1C006DDB77 /* MTGradientView.swift in Sources */,
 				C1A3CE872075FB7C00F9A9EB /* BlogDemosModel.swift in Sources */,
+				C13F3FC520779EFC006DDB77 /* MTLayerDelegateViewController.swift in Sources */,
 				C1A3CE702075F96000F9A9EB /* AppDelegate.swift in Sources */,
+				C13F3FC92077A012006DDB77 /* MTViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
