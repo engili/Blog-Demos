@@ -42,7 +42,8 @@ struct MTBlogDemosModel {
     //2.1 CALayer
     fileprivate static let calyerSubModels: [MTItemModel] = [
         MTItemModel.init(itemName: "CAGradientLayer", subModels: nil, targetController: MTCAGradientLayerViewController.self),
-        MTItemModel.init(itemName: "CALayerDelegate", subModels: nil, targetController: MTLayerDelegateViewController.self)
+        MTItemModel.init(itemName: "CALayerDelegate", subModels: nil, targetController: MTLayerDelegateViewController.self),
+        MTItemModel.init(itemName: "CALayer SubClass", subModels: nil, targetController: MTCALayerSubClassViewController.self)
     ]
 
     
