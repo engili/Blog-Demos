@@ -16,6 +16,7 @@
 		C13F3FC92077A012006DDB77 /* MTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13F3FC82077A012006DDB77 /* MTViewController.swift */; };
 		C13F3FCE207893B5006DDB77 /* MTLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13F3FCD207893B5006DDB77 /* MTLayer.swift */; };
 		C13F3FD0207894AD006DDB77 /* MTCALayerSubClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13F3FCF207894AD006DDB77 /* MTCALayerSubClassViewController.swift */; };
+		C18E9A32207AFAD900FD8254 /* MTPropertyAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18E9A31207AFAD900FD8254 /* MTPropertyAnimationViewController.swift */; };
 		C1A3CE702075F96000F9A9EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A3CE6F2075F96000F9A9EB /* AppDelegate.swift */; };
 		C1A3CE752075F96000F9A9EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1A3CE732075F96000F9A9EB /* Main.storyboard */; };
 		C1A3CE772075F96200F9A9EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1A3CE762075F96200F9A9EB /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		C13F3FC82077A012006DDB77 /* MTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTViewController.swift; sourceTree = "<group>"; };
 		C13F3FCD207893B5006DDB77 /* MTLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTLayer.swift; sourceTree = "<group>"; };
 		C13F3FCF207894AD006DDB77 /* MTCALayerSubClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTCALayerSubClassViewController.swift; sourceTree = "<group>"; };
+		C18E9A31207AFAD900FD8254 /* MTPropertyAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTPropertyAnimationViewController.swift; sourceTree = "<group>"; };
 		C1A3CE6C2075F96000F9A9EB /* MTBlogDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTBlogDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1A3CE6F2075F96000F9A9EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1A3CE742075F96000F9A9EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -138,6 +140,30 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		C18E9A2F207AF57700FD8254 /* UIViewPropertyAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				C18E9A33207AFAE900FD8254 /* Views */,
+				C18E9A30207AFABC00FD8254 /* Controllers */,
+			);
+			path = UIViewPropertyAnimator;
+			sourceTree = "<group>";
+		};
+		C18E9A30207AFABC00FD8254 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C18E9A31207AFAD900FD8254 /* MTPropertyAnimationViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C18E9A33207AFAE900FD8254 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C1A3CE632075F96000F9A9EB = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +199,7 @@
 		C1A3CE812075F96B00F9A9EB /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				C18E9A2F207AF57700FD8254 /* UIViewPropertyAnimator */,
 				C13F3FBB207731CD006DDB77 /* Keyboard */,
 			);
 			path = UIKit;
@@ -289,6 +316,7 @@
 				C13F3FD0207894AD006DDB77 /* MTCALayerSubClassViewController.swift in Sources */,
 				C13F3FBE2077335D006DDB77 /* MTKeyboardViewController.swift in Sources */,
 				C13F3FC320779053006DDB77 /* MTLayerDelegate.swift in Sources */,
+				C18E9A32207AFAD900FD8254 /* MTPropertyAnimationViewController.swift in Sources */,
 				C1A3CE8B20763CA900F9A9EB /* MTTitleListViewController.swift in Sources */,
 				C13F3FBA207653D3006DDB77 /* MTCAGradientLayerViewController.swift in Sources */,
 				C13F3FB820764D1C006DDB77 /* MTGradientView.swift in Sources */,

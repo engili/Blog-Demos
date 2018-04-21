@@ -31,7 +31,8 @@ struct MTBlogDemosModel {
     
     //1.0 UIKit
     fileprivate static let uiKitSubModels: [MTItemModel] = [
-        MTItemModel.init(itemName: "Keyboard", subModels: nil, targetController: MTKeyboardViewController.self)
+        MTItemModel.init(itemName: "Keyboard", subModels: nil, targetController: MTKeyboardViewController.self),
+        MTItemModel.init(itemName: "UIViewPropertyAnimator", subModels: nil, targetController: MTPropertyAnimationViewController.self)
     ]
     
     //2.0 CoreAnimation
