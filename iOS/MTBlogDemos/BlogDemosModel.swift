@@ -19,6 +19,7 @@ struct MTItemModel {
     let itemName: String
     let subModels: [MTItemModel]?
     let targetController: Swift.AnyClass?
+    
 }
 
 struct MTBlogDemosModel {
@@ -44,7 +45,8 @@ struct MTBlogDemosModel {
     fileprivate static let calyerSubModels: [MTItemModel] = [
         MTItemModel.init(itemName: "CAGradientLayer", subModels: nil, targetController: MTCAGradientLayerViewController.self),
         MTItemModel.init(itemName: "CALayerDelegate", subModels: nil, targetController: MTLayerDelegateViewController.self),
-        MTItemModel.init(itemName: "CALayer SubClass", subModels: nil, targetController: MTCALayerSubClassViewController.self)
+        MTItemModel.init(itemName: "CALayer SubClass", subModels: nil, targetController: MTCALayerSubClassViewController.self),
+        MTItemModel.init(itemName: "CAReplicatorLayer", subModels: nil, targetController: MTReplicatorVC.self)
     ]
 
     

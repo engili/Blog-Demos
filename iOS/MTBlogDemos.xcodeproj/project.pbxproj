@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C11FEE7C208B6E7300333F98 /* MTReplicatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11FEE7B208B6E7300333F98 /* MTReplicatorVC.swift */; };
+		C11FEE7F208B6F0F00333F98 /* MTReplicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11FEE7E208B6F0F00333F98 /* MTReplicatorView.swift */; };
+		C11FEE82208B751800333F98 /* UIColor+MTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11FEE81208B751800333F98 /* UIColor+MTExtension.swift */; };
 		C13F3FB820764D1C006DDB77 /* MTGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13F3FB720764D1C006DDB77 /* MTGradientView.swift */; };
 		C13F3FBA207653D3006DDB77 /* MTCAGradientLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13F3FB9207653D3006DDB77 /* MTCAGradientLayerViewController.swift */; };
 		C13F3FBE2077335D006DDB77 /* MTKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13F3FBC2077335D006DDB77 /* MTKeyboardViewController.swift */; };
@@ -26,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C11FEE7B208B6E7300333F98 /* MTReplicatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTReplicatorVC.swift; sourceTree = "<group>"; };
+		C11FEE7E208B6F0F00333F98 /* MTReplicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTReplicatorView.swift; sourceTree = "<group>"; };
+		C11FEE81208B751800333F98 /* UIColor+MTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+MTExtension.swift"; sourceTree = "<group>"; };
 		C13F3FB720764D1C006DDB77 /* MTGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGradientView.swift; sourceTree = "<group>"; };
 		C13F3FB9207653D3006DDB77 /* MTCAGradientLayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTCAGradientLayerViewController.swift; sourceTree = "<group>"; };
 		C13F3FBC2077335D006DDB77 /* MTKeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTKeyboardViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +63,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C11FEE79208B6E3300333F98 /* CAReplicatorLayer */ = {
+			isa = PBXGroup;
+			children = (
+				C11FEE7D208B6EF900333F98 /* Views */,
+				C11FEE7A208B6E5600333F98 /* Controllers */,
+			);
+			path = CAReplicatorLayer;
+			sourceTree = "<group>";
+		};
+		C11FEE7A208B6E5600333F98 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C11FEE7B208B6E7300333F98 /* MTReplicatorVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C11FEE7D208B6EF900333F98 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C11FEE7E208B6F0F00333F98 /* MTReplicatorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C11FEE80208B74ED00333F98 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C11FEE81208B751800333F98 /* UIColor+MTExtension.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		C13F3FB520764CBD006DDB77 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +149,7 @@
 		C13F3FC720779FFD006DDB77 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				C11FEE80208B74ED00333F98 /* Category */,
 				C13F3FC82077A012006DDB77 /* MTViewController.swift */,
 			);
 			path = General;
@@ -216,6 +256,7 @@
 		C1A3CE832075F97A00F9A9EB /* CALayer */ = {
 			isa = PBXGroup;
 			children = (
+				C11FEE79208B6E3300333F98 /* CAReplicatorLayer */,
 				C13F3FCA207892D7006DDB77 /* CALayerSubClass */,
 				C13F3FC020779009006DDB77 /* CALayerDelegate */,
 				C1A3CE852075F9BA00F9A9EB /* CAGradientLayer */,
@@ -314,13 +355,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C13F3FD0207894AD006DDB77 /* MTCALayerSubClassViewController.swift in Sources */,
+				C11FEE82208B751800333F98 /* UIColor+MTExtension.swift in Sources */,
 				C13F3FBE2077335D006DDB77 /* MTKeyboardViewController.swift in Sources */,
+				C11FEE7F208B6F0F00333F98 /* MTReplicatorView.swift in Sources */,
 				C13F3FC320779053006DDB77 /* MTLayerDelegate.swift in Sources */,
 				C18E9A32207AFAD900FD8254 /* MTPropertyAnimationViewController.swift in Sources */,
 				C1A3CE8B20763CA900F9A9EB /* MTTitleListViewController.swift in Sources */,
 				C13F3FBA207653D3006DDB77 /* MTCAGradientLayerViewController.swift in Sources */,
 				C13F3FB820764D1C006DDB77 /* MTGradientView.swift in Sources */,
 				C1A3CE872075FB7C00F9A9EB /* BlogDemosModel.swift in Sources */,
+				C11FEE7C208B6E7300333F98 /* MTReplicatorVC.swift in Sources */,
 				C13F3FC520779EFC006DDB77 /* MTLayerDelegateViewController.swift in Sources */,
 				C1A3CE702075F96000F9A9EB /* AppDelegate.swift in Sources */,
 				C13F3FCE207893B5006DDB77 /* MTLayer.swift in Sources */,
