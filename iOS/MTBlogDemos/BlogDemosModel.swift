@@ -38,7 +38,8 @@ struct MTBlogDemosModel {
     
     //2.0 CoreAnimation
     fileprivate static let coreAnimationsSubModels: [MTItemModel] = [
-        MTItemModel.init(itemName: "CALayer", subModels: calyerSubModels)
+        MTItemModel.init(itemName: "CALayer", subModels: calyerSubModels),
+        MTItemModel.init(itemName: "CABasicAnimation", subModels: nil, targetController: MTBasicAnimationVC.self)
     ]
     
     //2.1 CALayer
